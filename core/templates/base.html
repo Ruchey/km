@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!--[if lt IE 9]> 
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
+    <link rel="icon" type="image/x-icon" href="{% static 'core/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'core/css/main.css' %}" />
+    <meta charset="utf-8">
+    <title>{% block title %}К-МЕБЕЛЬ{% endblock %}</title>
+</head>
+
+<body>
+    
+{% block header %}
+{% include 'core/header.html' %}
+{% endblock %}
+{% block content %}{% include template_content %}{% endblock %}
+    
+    
+</body>
+</html>
