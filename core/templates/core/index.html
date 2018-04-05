@@ -4,6 +4,8 @@
 
 {% block content %}
 <div class="g-container" role="main">
-{{ html_text | safe }}
+{% for data in text %}
+{{ data.text | safe }}
+{% endfor %}
 </div>
 {% endblock %}
