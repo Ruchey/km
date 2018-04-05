@@ -1,5 +1,12 @@
 from django.db import models
 
+
+class MainMenu(models.Model):
+    title = models.CharField(max_length=50, verbose_name='Заголовок')
+    slug = models.SlugField(max_length=50, verbose_name='Метка')
+    usort = models.PositiveSmallIntegerField(verbose_name='Сортировка', default=1)
+    is_main = models.
+
 class CoreData(models.Model):
     title = models.CharField(max_length=100, verbose_name='Заголовок')
     text = models.TextField(verbose_name='Текст')
