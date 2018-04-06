@@ -4,10 +4,10 @@ from . import models
 
 
 class CoreDataAdmin(admin.ModelAdmin):
-    list_display = ('title', 'to_publish', 'on_main', 'usort')
-    list_editable = ('to_publish', 'on_main', 'usort')
+    list_display = ('title', 'to_publish', 'to_menu', 'usort')
+    list_editable = ('to_publish', 'to_menu', 'usort')
     fieldsets = [
-        (None, {'fields': [('title', 'to_publish', 'on_main'), 'text']}),
+        (None, {'fields': [('title', 'to_publish'), 'to_menu', 'text']}),
     ]
 
 class MainMenuAdmin(admin.ModelAdmin):

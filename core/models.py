@@ -30,7 +30,7 @@ class MainMenu(CommonInfo):
 
 
 class CoreData(CommonInfo):
-    to_menu = models.ForeignKey(MainMenu, verbose_name='Меню')
+    to_menu = models.ForeignKey(MainMenu, verbose_name='Прицепить к меню', on_delete=models.CASCADE, blank=True, null=True)
     text = models.TextField(verbose_name='Текст')    
     usort = models.PositiveSmallIntegerField(verbose_name='Сортировка', default=1)
 
