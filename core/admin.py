@@ -12,7 +12,7 @@ class CoreDataAdmin(admin.ModelAdmin):
 
 class MainMenuAdmin(admin.ModelAdmin):
     list_display = ('title', 'slug', 'to_publish', 'is_main', 'usort')
-    list_editable = ('to_publish', 'is_main', 'usort')
+    list_editable = ('to_publish', 'usort')
     fieldsets = [
         (None, {'fields': ['title', 'slug', 'to_publish', 'is_main', 'usort']}),
     ]

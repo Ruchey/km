@@ -1,36 +1,37 @@
 from django.db import models
 
+import pdb
 
-class MainMenu(models.Model):
+class CommonInfo(models.Model):
+    'Абстрактная модель для общих полей'
     title = models.CharField(max_length=50, verbose_name='Заголовок')
-    slug = models.SlugField(max_length=50, verbose_name='Метка')
     to_publish = models.BooleanField(verbose_name='Опубликовать', default=True)
+
+    class Meta:
+        abstract = True
+
+class MainMenu(CommonInfo):
+    slug = models.SlugField(max_length=50, verbose_name='Метка')
     is_main = models.BooleanField(verbose_name='Главное', default=False)
     usort = models.PositiveSmallIntegerField(verbose_name='Сортировка', default=1)
     
     class Meta:
         verbose_name = 'Главное меню'
         verbose_name_plural = 'Главное меню'
+        ordering = ['usort']
     
     def __str__(self):
         return self.title
 
-    def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
+    def save(self, *args, **kwargs):
         if self.is_main:
-            try:
-                active_menu = MainMenu.objects.get(is_main=True)
-            except:
-                pass
-            else:
-                active_menu.approved = False
-                active_menu.save()
-        super(MainMenu, self).save()
+            MainMenu.objects.filter(is_main=True).update(is_main=False)
+        super(MainMenu, self).save(*args, **kwargs)
 
-class CoreData(models.Model):
-    title = models.CharField(max_length=100, verbose_name='Заголовок')
-    text = models.TextField(verbose_name='Текст')
-    to_publish = models.BooleanField(verbose_name='Опубликовать', default=True)
-    on_main = models.BooleanField(verbose_name='На главной', default=False)
+
+class CoreData(CommonInfo):
+    to_menu = models.ForeignKey(MainMenu, verbose_name='Меню')
+    text = models.TextField(verbose_name='Текст')    
     usort = models.PositiveSmallIntegerField(verbose_name='Сортировка', default=1)
 
     class Meta:
