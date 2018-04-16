@@ -36,7 +36,7 @@ a {
 }
 
 header {
-    background-color: #466B8B;
+    background-color: rgba(43,49,57,0.9);
     position: relative;
 }
 
@@ -48,65 +48,52 @@ header {
 
 .logo {
     /*background-color: #F1DF0DFF ;*/
-    width: 80px;
-    height: 80px;
-    margin: 5px;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo a {
-    /*background-color: #4A4;*/
     background-image: url('../images/logo_w.svg');
+    background-size: 40px;
     background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-    width: 100%;
-    height: 100%;
-    min-width: 50px;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
 }
 
-.undonav-nav {
-    justify-content: flex-end;
-    /*background-color: #FF7E00FF ;*/
-    width: 60%;
-    margin: 5px 0 5px 5px;
-}
-
-.slogan {
-    font-size: 22px;
-    font-style: italic;
-    margin: 0 5px
-    /*background-color: #030;*/
-}
-
-.slogan a {
-    color: #fff;
-}
-
-nav {
-    /*background-color: #4218E6FF ;*/
-    margin: 10px 0 0;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-.menu-main {
-    justify-content: space-between;
-    /*background-color: #D02EC2FF ;*/
-    padding: 0;
+#globalnav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
     margin: 0;
+    width: 100%;
+    min-width: 1024px;
+    height: 50px;
+    max-height: 50px;
+    background: rgba(0,0,0,0.8);
+    font-size: 24px;
+    user-select: none;
 }
 
-.menu-main li {
-    list-style: none;
-    margin: 0 5px;
+#globalnav .ac-gn-header {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
 }
 
-.menu-main li a {
-    color: #fff;
-    
+#globalnav .gn-item {
+    display: inline-block;
+    position: relative;
+    height: 44px;
+    z-index: 1;
+    vertical-align: top;
 }
+
+
 
 .contacts {
     /*background-color: #D02EC2FF;*/

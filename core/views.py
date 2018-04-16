@@ -8,7 +8,7 @@ import pdb
 class IndexView(generic.ListView):
     template_name = 'core/index.html'
     context_object_name = 'coredata_text'
-    pdb.set_trace()
+    # pdb.set_trace()
 
     def get_queryset(self):
         return models.CoreData.objects.filter(to_publish=True, to_menu=1).order_by('usort')
