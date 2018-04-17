@@ -1,77 +1,78 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 * {
-    border: black;
+border: black;
   border-width: thin;
   /*border-style: solid;*/
 }
 
 body {
-    margin: 0;
-    font-size: 100%;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 100%;
+  font-family: "SF Display Light","SF Display Medium", "fontello", 
+               "Helvetica Neue","Helvetica","Arial",sans-serif;
+  min-width: 320px;
 }
 
 a {
-    /*text-transform: uppercase;*/
-    text-decoration: none;
+  /*text-transform: uppercase;*/
+  text-decoration: none;
 }
 
 .g-container {
-    width: 80% ;
-    height: 100%;
+  width: 80% ;
+  height: 100%;
   margin: 0 auto;
   padding: 0;
   /*background-color: #EF0F1F;*/
 }
 
 .flex-row {
-    display: flex;
-    flex-flow: row wrap;    
+  display: flex;
+  flex-flow: row wrap;    
 }
 
 .flex-column {
-    display: flex;
-    flex-flow: column wrap; 
+  display: flex;
+  flex-flow: column wrap; 
 }
 
 header {
-    background-color: rgba(43,49,57,0.9);
-    position: relative;
+  background-color: rgba(43,49,57,0.9);
+  position: fixed;
 }
 
 .flex-head {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .logo {
-    /*background-color: #F1DF0DFF ;*/
-    background-image: url('../images/logo_w.svg');
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 40px;
-    display: inline-block;
+  /*background-color: #F1DF0DFF ;*/
+  background-image: url('../images/logo_w.svg');
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
 }
 
 #globalnav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 9999;
-    display: block;
-    margin: 0;
-    width: 100%;
-    min-width: 1024px;
-    height: 50px;
-    max-height: 50px;
-    background: rgba(0,0,0,0.8);
-    font-size: 24px;
-    user-select: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  margin: 0;
+  width: 100%;
+  min-width: 1024px;
+  height: 50px;
+  max-height: 50px;
+  background: rgba(0,0,0,0.8);
+  font-size: 24px;
+  user-select: none;
 }
 
 #globalnav .ac-gn-header {
