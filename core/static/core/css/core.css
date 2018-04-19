@@ -6,11 +6,18 @@ border: black;
 }
 
 body {
+  background-color: #E6E6E6;
   margin: 0;
   font-size: 100%;
-  font-family: "SF Display Light","SF Display Medium", "fontello", 
+  font-family: "SF Display Light","SF Display Medium", 
+              "SFUI Text Light", 
                "Helvetica Neue","Helvetica","Arial",sans-serif;
   min-width: 320px;
+}
+
+main {
+  background-color: #E6E6E6;
+  height: 100%;
 }
 
 a {
@@ -24,7 +31,6 @@ a {
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  /*background-color: #EF0F1F;*/
 }
 
 .flex-row {
@@ -34,7 +40,7 @@ a {
 
 .flex-column {
   display: flex;
-  flex-flow: column wrap; 
+  flex-flow: column wrap;
 }
 
 header {
@@ -44,6 +50,8 @@ header {
   height: 50px;
   top: 0;
 }
+
+/*Настройка главного меню и шапки*/
 
 #globalnav {
   z-index: 9999;
@@ -69,7 +77,6 @@ header {
 }
 
 .logo {
-  /*background-color: #F1DF0DFF ;*/
   background-image: url('../images/logo_w.svg');
   background-size: 40px;
   background-repeat: no-repeat;
@@ -80,70 +87,77 @@ header {
   vertical-align: middle;
 }
 
-#slide {
-/*  background-image: url('../images/design/slide.png');
-    background-color: #416685;
-    background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;*/
-    width: auto;
-    height: 500px;
+/*Первый заголовк на главной странице*/
+
+.main_title {
+  margin: 1em 0 3em;
+  text-align: center;
 }
 
-#slider {
-  width: 100%;
-  height: 500px;
-  position: absolute;
-  z-index: -1;
-  overflow: hidden;
-  justify-content: center;
-  background-color: #466B8B;
+.main_title ul {
+  padding: 0px;  
 }
 
-#slider img {
-    height: 100%;
+.main_title h1 {
+  margin: 0px;
+  font-family: "SFUI Text Light";
+  text-transform: uppercase;
+  color: #4E5E7E;
 }
 
-#parts {
-    width: 350px;
-    height: 350px;
-    justify-content: space-between;
-    align-content: space-between;
-    align-self: center;
+.main_title li {
+  display: inline-block;
+  margin: 15px;
 }
 
-.part {
-    width: 150px;
-    height: 150px;
-    background-color: #fff;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 12px;
+/*Настройка стикеров*/
+
+.sticker_block {
+  justify-content: space-around;
+  align-items: center;
 }
 
-.part img {
-    height: 80%;
-    width: auto;
+.sticker {
+  width: 240px;
+  height: 340px;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
 }
 
-.part p {
-    margin: 0;
+.stick_img_wrap {
+  height: 240px;
+  width: 240px;
+  /*border-bottom: 1px solid #E6E6E6;*/
 }
 
-.part:hover {
-    box-shadow: 0 0 40px 4px #305575;
+.sticker>span {
+  width: 80%;
+  content: '';
+  border-bottom: 1px solid #E6E6E6;
+  align-self: center;
 }
 
-#showcase {
-    background-color: #B7CBDB;
-    height: 200px;
+.sticker, .stick_img_wrap {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
 }
 
-main {
-    background-color: #fff;
-    height: 100%;
+.sticker p {
+  padding: 0 10px;
+}
+
+#stic_1 {
+  background-color: #4E5E7E;
+}
+
+#stic_2 {
+  background-color: #939E62;
+}
+
+#stic_3 {
+  background-color: #BE7682;
 }
 
 footer {

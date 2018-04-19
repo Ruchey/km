@@ -1,11 +1,42 @@
 {% extends "base.html" %}
-
+{% load staticfiles %}
 {% block title %}К-МЕБЕЛЬ|Главная{% endblock %}
 
 {% block content %}
-<div class="g-container" role="main">
+<main class="g-container" role="main">
+  <div class="main_title">
+    <ul>
+      <li><h1>Шкафы-купе</h1></li>
+      <li><h1>|</h1></li>
+      <li><h1>Гардеробные</h1></li>
+      <li><h1>|</h1></li>
+      <li><h1>Шкафы платяные</h1></li>
+    </ul>
+    <h1>на заказ в Белгороде</h1>
+  </div>
+  <div class="sticker_block flex-row">
+    <div id="stic_1" class="sticker">
+      <div class="stick_img_wrap">
+        <img src="{% static 'core/images/operator.svg' %}" alt="оператор">
+      </div><span></span>      
+      <p>Мы работаем онлайн. Задать вопрос</p>
+    </div>
+    <div id="stic_2" class="sticker">
+      <div class="stick_img_wrap">
+        <img src="{% static 'core/images/shkaf.svg' %}" alt="шкаф">
+      </div><span></span>
+      <p>Получить дизайн проект бесплатно</p>
+    </div>
+    <div id="stic_3" class="sticker">
+      <div class="stick_img_wrap">
+        <img src="{% static 'core/images/saw.svg' %}" alt="пила">
+      </div><span></span>
+      <p>Преимущества нашего производства</p>
+    </div>
+  </div>
 {% for data in coredata_text %}
 {{ data.text | safe }}
 {% endfor %}
-</div>
+</main>
 {% endblock %}
+
