@@ -47,9 +47,6 @@ header {
 .gn-list {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
   list-style: none; 
 }
 
@@ -62,32 +59,21 @@ header {
   height: 40px;
   width: 40px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 #globalnav {
-  top: 0;
   z-index: 9999;
   padding: 0;
   margin: 0;
   width: 100%;
-  min-width: 1024px;
-  height: 50px;
-  /*max-height: 50px;*/
   background: rgba(0,0,0,0.8);
   font-size: 24px;
   user-select: none;
   overflow: hidden;
 }
 
-.gn-item {
-    display: inline-block;
-    /*position: relative;*/
-    /*height: 44px;*/
-    z-index: 1;
-    vertical-align: top;
-}
-
-.gn-item a {
+.gn-list a {
   color: #fff
 }
 
