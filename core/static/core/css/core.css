@@ -161,6 +161,17 @@ header {
   background-color: #BE7682;
 }
 
+/*Кнопка для заказ*/
+
+.bt_order {
+  font-size: 36px;
+  width: 330px;
+  height: 70px;
+  margin: 15px 0;
+  background-color: #ff6600;
+  color: #fff;
+}
+
 footer {
     background-color: #466B8B;
     height: 160px;

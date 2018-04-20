@@ -19,7 +19,7 @@
       <div class="stick_img_wrap">
         <img src="{% static 'core/images/operator.svg' %}" alt="оператор">
       </div><span></span>      
-      <p>Мы работаем онлайн. Задать вопрос</p>
+      <p>Мы работаем онлайн Задать вопрос</p>
     </div>
     <div id="stic_2" class="sticker">
       <div class="stick_img_wrap">
@@ -34,7 +34,10 @@
       <p>Преимущества нашего производства</p>
     </div>
   </div>
-  <button class="order" name="b_order" value="1">Сделать заказ</button>
+  <div style="text-align: center;">
+      <button class="bt_order" name="b_order" value="1" type="submit">сделать заказ</button>
+  </div>
+  
 {% for data in coredata_text %}
 {{ data.text | safe }}
 {% endfor %}
