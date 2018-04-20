@@ -120,6 +120,7 @@ header {
 .sticker {
   width: 240px;
   height: 340px;
+  margin: 20px 0;
   font-size: 22px;
   text-align: center;
   color: #fff;
