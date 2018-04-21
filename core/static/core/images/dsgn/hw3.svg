@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW 2017 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="140px" height="140px" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 951500 951500"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:white}
+    .fil1 {fill:#8A424E}
+    .fil0 {fill:#BE7682}
+   ]]>
+  </style>
+    <mask id="id0">
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="847000" y1="847000" x2="342400" y2="342400">
+   <stop offset="0" style="stop-opacity:0; stop-color:white"/>
+   <stop offset="0.2" style="stop-opacity:-127.502; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:white"/>
+  </linearGradient>
+     <rect style="fill:url(#id1)" x="236000" y="236000" width="717400" height="717400"/>
+    </mask>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2036805238224">
+   <circle class="fil0" cx="475700" cy="475700" r="475700"/>
+   <path class="fil1" style="mask:url(#id0)" d="M951500 475700l0 0c0,262800 -213000,475800 -475800,475800l-237800 -237900 0 -224300 27100 0 -27100 -27200 0 -224200 224200 0 27200 27100 0 -27100 224300 0 237900 237800z"/>
+   <path class="fil2" d="M237900 237900l224200 0 0 224200 -224200 0 0 -224200zm27100 197100l170000 0 0 -170000 -170000 0 0 170000zm-27100 54300l224200 0 0 224300 -224200 0 0 -224300zm27100 197100l170000 0 0 -169900 -170000 0 0 169900zm224300 -448500l224300 0 0 475700 -224300 0 0 -475700zm27200 448500l169900 0 0 -421400 -169900 0 0 421400zm-156300 -346600l54400 0 0 20400 -54400 0 0 54400 -20400 0 0 -54400 -54400 0 0 -20400 54400 0 0 -54400 20400 0 0 54400zm-74800 251500l129200 0 0 20400 -129200 0 0 -20400zm251600 -149700l129100 0 0 20300 -129100 0 0 -20300zm0 47500l129100 0 0 20400 -129100 0 0 -20400z"/>
+  </g>
+ </g>
+</svg>

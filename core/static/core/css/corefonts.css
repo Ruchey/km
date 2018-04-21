@@ -1,20 +1,35 @@
+/*Helvetica*/
 @font-face {
-  font-family:'SF Display Light';
-  font-style:normal;
-  font-weight:100;
-  src: url("../fonts/SF Display Light.ttf") format("truetype");
+  font-family: 'Helvetica';
+  src: url("../fonts/Helvetica/Helvetica-Light.otf") format("opentype");
+  font-weight: lighter;
+  font-style: normal;
 }
 
 @font-face {
-  font-family:'SF Display Medium';
-  font-style:normal;
-  font-weight:100;
-  src: url("../fonts/SF Display Medium.ttf") format("truetype");
+  font-family: 'Helvetica';
+  src: url("../fonts/Helvetica/Helvetica-Light-Oblique.otf") format("opentype");
+  font-weight: lighter;
+  font-style: italic;
 }
 
 @font-face {
-  font-family:'SFUI Text Light';
-  font-style:normal;
-  font-weight:100;
-  src: url("../fonts/SFUIText-Light.ttf") format("truetype");
+  font-family: 'Helvetica';
+  src: url("../fonts/Helvetica/Helvetica-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/Helvetica/Helvetica-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/Helvetica/HelveticaNeueCyr-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
 }
