@@ -77,7 +77,7 @@ header {
 }
 
 .logo {
-  background-image: url('../images/logo_w.svg');
+  background-image: url('../images/dsgn/logo_w.svg');
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
@@ -162,6 +162,35 @@ header {
   background-color: #ff6600;
   color: #fff;
 }
+
+/*Блок Как мы работаем*/
+.howwork {
+  align-items: center;
+}
+
+.howwork h2 {
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  font-size: 32px;
+}
+
+.howwork figure {
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.howwork img {
+  width: 140px;
+  height: 140px;
+}
+
+.howwork div {
+  width: 100%;
+  justify-content: space-between;
+}
+
 
 footer {
     background-color: #466B8B;

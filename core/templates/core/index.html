@@ -29,10 +29,36 @@
   <div style="text-align: center;">
       <button class="bt_order" name="b_order" value="1" type="submit">сделать заказ</button>
   </div>
-  
+
 {% for data in coredata_text %}
 {{ data.text | safe }}
 {% endfor %}
+
+  <div class="howwork flex-column">
+    <h2>Как мы работаем</h2>
+    <div class="flex-row">
+      <figure>
+        <img src="{% static 'core/images/dsgn/hw1.svg' %}" alt="">
+        <figcaption>обсуждаем предварительный проект и считаем стоимость</figcaption>
+      </figure>
+      <figure>
+        <img src="{% static 'core/images/dsgn/hw2.svg' %}" alt="">
+        <figcaption>выезжаем на замер</figcaption>
+      </figure>
+      <figure>
+        <img src="{% static 'core/images/dsgn/hw3.svg' %}" alt="">
+        <figcaption>корректируем проект и делаем окончательный расчёт стоимости</figcaption>
+      </figure>
+      <figure>
+        <img src="{% static 'core/images/dsgn/hw4.svg' %}" alt="">
+        <figcaption>заключаем договор</figcaption>
+      </figure>
+      <figure>
+        <img src="{% static 'core/images/dsgn/hw5.svg' %}" alt="">
+        <figcaption>изготавливаем, привозим и собираем</figcaption>
+      </figure>
+    </div>
+  </div>
+
 </main>
 {% endblock %}
-
