@@ -10,27 +10,14 @@ class CommonInfo(models.Model):
     class Meta:
         abstract = True
 
-class MainMenu(CommonInfo):
-    slug = models.SlugField(max_length=50, verbose_name='Метка')
-    is_main = models.BooleanField(verbose_name='Главное', default=False)
-    usort = models.PositiveSmallIntegerField(verbose_name='Сортировка', default=1)
-    
-    class Meta:
-        verbose_name = 'Главное меню'
-        verbose_name_plural = 'Главное меню'
-        ordering = ['usort']
-    
-    def __str__(self):
-        return self.title
-
-    def save(self, *args, **kwargs):
-        if self.is_main:
-            MainMenu.objects.filter(is_main=True).update(is_main=False)
-        super(MainMenu, self).save(*args, **kwargs)
-
-
 class CoreData(CommonInfo):
-    to_menu = models.ForeignKey(MainMenu, verbose_name='Прицепить к меню', on_delete=models.CASCADE, blank=True, null=True)
+    mainMenu = (
+        ("main", "Главное"),
+        ("mebel", "Мебель"),
+        ("materials", "Материалы"),
+        ("blog", "Блог"),
+        ("about", "О себе"))
+    to_menu = models.CharField(max_length=10, choices=mainMenu, verbose_name='Прицепить к меню', blank=True, null=True)
     text = models.TextField(verbose_name='Текст')    
     usort = models.PositiveSmallIntegerField(verbose_name='Сортировка', default=1)
 

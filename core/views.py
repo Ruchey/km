@@ -11,7 +11,7 @@ class IndexView(generic.ListView):
     # pdb.set_trace()
 
     def get_queryset(self):
-        return models.CoreData.objects.filter(to_publish=True, to_menu=1).order_by('usort')
+        return models.CoreData.objects.filter(to_publish=True, to_menu="main").order_by('usort')
 
 # def index(init):
 #     pdb.set_trace()
