@@ -3,62 +3,60 @@
 {% block title %}К-МЕБЕЛЬ|Главная{% endblock %}
 
 {% block content %}
-<main class="g-container" role="main">
-   <h1 class="main_title">Шкафы-купе . Гардеробные . Шкафы платяные</h1>
-   <h2 class="main_title">на заказ в Белгороде</h2>
-  <div class="sticker_block flex-row">
-    <div id="stic_1" class="sticker">
-      <div class="stick_img_wrap">
-        <img src="{% static 'core/images/dsgn/operator.svg' %}" alt="оператор">
-      </div><span></span>      
-      <p>Мы работаем онлайн Задать вопрос</p>
-    </div>
-    <div id="stic_2" class="sticker">
-      <div class="stick_img_wrap">
-        <img src="{% static 'core/images/dsgn/shkaf.svg' %}" alt="шкаф">
-      </div><span></span>
-      <p>Получить дизайн проект бесплатно</p>
-    </div>
-    <div id="stic_3" class="sticker">
-      <div class="stick_img_wrap">
-        <img src="{% static 'core/images/dsgn/saw.svg' %}" alt="пила">
-      </div><span></span>
-      <p>Преимущества нашего производства</p>
-    </div>
+ <h1 class="main_title">Шкафы-купе . Гардеробные . Шкафы платяные</h1>
+ <h2 class="main_title">на заказ в Белгороде</h2>
+<div class="sticker_block flex-row">
+  <div id="stic_1" class="sticker">
+    <div class="stick_img_wrap">
+      <img src="{% static 'core/images/dsgn/operator.svg' %}" alt="оператор">
+    </div><span></span>      
+    <p>Мы работаем онлайн Задать вопрос</p>
   </div>
-  <div style="text-align: center;">
-      <button class="bt_order" name="b_order" value="1" type="submit">сделать заказ</button>
+  <div id="stic_2" class="sticker">
+    <div class="stick_img_wrap">
+      <img src="{% static 'core/images/dsgn/shkaf.svg' %}" alt="шкаф">
+    </div><span></span>
+    <p>Получить дизайн проект бесплатно</p>
   </div>
+  <div id="stic_3" class="sticker">
+    <div class="stick_img_wrap">
+      <img src="{% static 'core/images/dsgn/saw.svg' %}" alt="пила">
+    </div><span></span>
+    <p>Преимущества нашего производства</p>
+  </div>
+</div>
+<div style="text-align: center;">
+    <button class="bt_order" name="b_order" value="1" type="submit">сделать заказ</button>
+</div>
 
 {% for data in coredata_text %}
 {{ data.text | safe }}
 {% endfor %}
 
-  <div class="howwork flex-column">
-    <h2>Как мы работаем</h2>
-    <div class="flex-row">
-      <figure>
-        <img src="{% static 'core/images/dsgn/hw1.svg' %}" alt="">
-        <figcaption>обсуждаем предварительный проект и считаем стоимость</figcaption>
-      </figure>
-      <figure>
-        <img src="{% static 'core/images/dsgn/hw2.svg' %}" alt="">
-        <figcaption>выезжаем на замер</figcaption>
-      </figure>
-      <figure>
-        <img src="{% static 'core/images/dsgn/hw3.svg' %}" alt="">
-        <figcaption>корректируем проект и делаем окончательный расчёт стоимости</figcaption>
-      </figure>
-      <figure>
-        <img src="{% static 'core/images/dsgn/hw4.svg' %}" alt="">
-        <figcaption>заключаем договор</figcaption>
-      </figure>
-      <figure>
-        <img src="{% static 'core/images/dsgn/hw5.svg' %}" alt="">
-        <figcaption>изготавливаем, привозим и собираем</figcaption>
-      </figure>
-    </div>
+<div class="howwork flex-column">
+  <h2>Как мы работаем</h2>
+  <div class="flex-row">
+    <figure>
+      <img src="{% static 'core/images/dsgn/hw1.svg' %}" alt="">
+      <figcaption>обсуждаем предварительный проект и считаем стоимость</figcaption>
+    </figure>
+    <figure>
+      <img src="{% static 'core/images/dsgn/hw2.svg' %}" alt="">
+      <figcaption>выезжаем на замер</figcaption>
+    </figure>
+    <figure>
+      <img src="{% static 'core/images/dsgn/hw3.svg' %}" alt="">
+      <figcaption>корректируем проект и делаем окончательный расчёт стоимости</figcaption>
+    </figure>
+    <figure>
+      <img src="{% static 'core/images/dsgn/hw4.svg' %}" alt="">
+      <figcaption>заключаем договор</figcaption>
+    </figure>
+    <figure>
+      <img src="{% static 'core/images/dsgn/hw5.svg' %}" alt="">
+      <figcaption>изготавливаем, привозим и собираем</figcaption>
+    </figure>
   </div>
+</div>
 
-</main>
 {% endblock %}

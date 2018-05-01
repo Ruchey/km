@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}К-МЕБЕЛЬ|Блог{% endblock %}
+
+{% block content %}
+
+{% if posts_list %}
+<ul class="content-list">
+  {% for post in posts_list %}
+  <li class="content-list-item">
+    <article>
+      <header class="header_post_list"><a href="">Рубрика: {{ post.rubric }}</a></header>
+      <h2 class="post_title"><a href="{% url 'blog:detail' post.slug %}">{{ post.title }}</a></h2>
+      <div>{{ post.text | safe | truncatewords_html:100 }}</div>
+      <a href="{% url 'blog:detail' post.slug %}" class="post_read_more">Читать дальше</a>
+    </article>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+  <p>No polls are available.</p>
+{% endif %}
+
+
+{% endblock %}
+

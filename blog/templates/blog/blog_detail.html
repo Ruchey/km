@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}К-МЕБЕЛЬ|Блог{% endblock %}
+
+{% block content %}
+{{ post_detail.text | safe }}
+
+{% endblock %}
+

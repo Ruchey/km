@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{% static 'core/css/corefonts.css' %}" />
     <link rel="stylesheet" href="{% static 'core/css/core.css' %}" />
     <link rel="stylesheet" href="{% static 'core/css/fontello.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}" />
     <meta charset="utf-8">
     <title>{% block title %}К-МЕБЕЛЬ{% endblock %}</title>
 </head>
@@ -18,8 +19,11 @@
 {% block header %}
 {% include 'core/header.html' %}
 {% endblock %}
-{% block content %}{% include template_content %}{% endblock %}
-    
+<main class="g-container" role="main">
+{% block content %}
+{% include template_content %}
+{% endblock %}
+</main>
  <footer></footer>   
 </body>
 </html>
