@@ -3,7 +3,11 @@
 {% block title %}К-МЕБЕЛЬ|Блог{% endblock %}
 
 {% block content %}
-{{ post_detail.text | safe }}
-
+<article  class="content-list-item">
+  <header class="header_post_list"><a href="">Рубрика: {{ post_detail.rubric }}. | </a>
+        <span>Дата публикации: {{ post_detail.published_date }}</span></header>
+  <h1>{{ post_detail.title }}</h1>    
+  {{ post_detail.text | safe }}
+</article>
 {% endblock %}
 
