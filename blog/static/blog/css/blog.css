@@ -11,8 +11,9 @@
 }
 
 .header_post_list {
-  margin-bottom: 5px;
+  padding-bottom: 15px;
   font-size: 0.9em;
+  border-bottom: 1px solid #7aa1bd; 
 }
 
 .post_title {
@@ -47,4 +48,43 @@
   border:1px solid transparent;
   background-color:#7aa1bd;
   color:#fff
+}
+
+.footer-post {
+  display: inline-flex;
+  height: 40px;
+  width: 100%;
+  margin: 15px 0 0 0;
+  padding: 0 10px;
+  border-top: 1px solid #7aa1bd; 
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-post ul {
+  display: inline-flex;
+  margin: 0;
+  padding: 0 0 0 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-post ul {
+  font-size: 2em;
+}
+
+.icon-vkontakte-1 {
+  color: #4A76A8;
+}
+
+.icon-odnoklassniki-square {
+  color: #EE8208;
+}
+
+.icon-at {
+  color: #FDA840;
+}
+
+.icon-facebook-official {
+  color: #3B5998;
 }

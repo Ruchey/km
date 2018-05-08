@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{% static 'core/css/fontello.css' %}" />
     <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}" />
     <meta charset="utf-8">
+    <meta name="description" content="{% block description %}Шкафы-купе, гардеробные и кухни на заказ в Белгороде.{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}шкафы-купе, гардеробные, кухни, прихожие, шкафы{% endblock %}">
     <title>{% block title %}К-МЕБЕЛЬ{% endblock %}</title>
 </head>
 
@@ -24,6 +26,6 @@
 {% include template_content %}
 {% endblock %}
 </main>
- <footer></footer>   
+ <footer class="footer-main"></footer>   
 </body>
 </html>

@@ -43,7 +43,7 @@ a {
   flex-flow: column wrap;
 }
 
-.header_main {
+.header-main {
   background-color: rgba(43,49,57,0.9);
   position: fixed;
   z-index: 9999;
@@ -192,7 +192,7 @@ a {
 }
 
 
-footer {
+.footer-main {
     background-color: #466B8B;
     height: 160px;
 }

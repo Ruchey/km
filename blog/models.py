@@ -24,6 +24,7 @@ class Post(CommonInfo):
     rubric = models.ForeignKey(Rubric, on_delete=models.CASCADE, verbose_name="Рубрика")
     slug = models.CharField(max_length=200, unique=True, verbose_name='url статьи')    
     text = models.TextField(blank=True, null=True, verbose_name='Текст')
+    keywords = models.CharField(max_length=255, blank=True, null=True, verbose_name='Ключевые слова')
     create_date = models.DateTimeField(default=timezone.now, verbose_name='Дата создания')
     published_date = models.DateTimeField(blank=True, null=True, verbose_name='Дата публикации')
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE, verbose_name='Автор')
